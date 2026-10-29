@@ -1,0 +1,15 @@
+{
+  "name": "reusemarket",
+  "version": "1.0.0",
+  "description": "ReUseMarket — Campus Reuse & Exchange Platform",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "seed": "node server/utils/seed.js",
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('npm', ['run', 'server'], { stdio: 'inherit', shell: true }); spawn('npm', ['run', 'client'], { stdio: 'inherit', shell: true });\""
+  },
+  "keywords": ["campus", "marketplace", "reuse", "exchange", "student"],
+  "author": "",
+  "license": "ISC"
+}
+

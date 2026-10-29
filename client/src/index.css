@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8F9F6;
+    color: #202620;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar for clean UI */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1F3EE;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D2D8CF;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B6C0B2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2.5 rounded-card bg-primary text-white font-medium text-sm transition-all duration-150 hover:bg-primary-hover active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2.5 rounded-card bg-white border border-charcoal-border text-charcoal font-medium text-sm transition-all duration-150 hover:bg-charcoal-light hover:border-gray-300 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-4 py-2.5 rounded-card border border-primary text-primary font-medium text-sm transition-all duration-150 hover:bg-primary-light active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .badge-category {
+    @apply inline-flex items-center text-xs px-2.5 py-1 rounded-full font-medium bg-charcoal-light text-charcoal;
+  }
+  .badge-verified {
+    @apply inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-medium bg-primary-light text-primary;
+  }
+  .card-standard {
+    @apply bg-white border border-charcoal-border rounded-card transition-all duration-200 hover:border-gray-300;
+  }
+}
