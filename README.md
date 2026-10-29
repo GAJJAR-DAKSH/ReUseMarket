@@ -9,6 +9,17 @@ helps reduce waste by giving useful items a second life.
 > more sustainable --- with no platform commission and in-person campus
 > handovers.
 
+## 🌐 Live Demo
+
+- **Live website:** https://re-use-market-three.vercel.app
+- **Backend API:** https://reusemarket.onrender.com
+- **API health check:** https://reusemarket.onrender.com/api/health
+- **GitHub repository:** https://github.com/GAJJAR-DAKSH/ReUseMarket
+
+The frontend is deployed on Vercel, the Express API is hosted on Render, and the application database uses MongoDB Atlas. The API health endpoint can be used to confirm that the backend is responding.
+
+> Note: Render's free service may sleep after inactivity. Also verify that uploaded images use persistent/cloud storage before relying on them long-term; files stored on a local server disk may not persist across redeploys.
+
 ## ✨ Features
 
 -   **Campus-focused marketplace** for books, notes, electronics, hostel
@@ -235,7 +246,7 @@ public campus location.
 
 -   Cloud image storage
 -   Email verification and password-reset delivery
--   Production deployment with persistent database storage
+-   Automated deployment checks and monitoring
 -   Automated tests and CI checks
 -   Improved accessibility and mobile navigation
 -   More detailed analytics and moderation audit logs
